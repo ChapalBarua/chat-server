@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ChapalBarua/websocket-chat-server.git"
+    "url": "git+https://github.com/ChapalBarua/chat-server.git"
   },
   "author": "Chapal Barua",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ChapalBarua/websocket-chat-server/issues"
+    "url": "https://github.com/ChapalBarua/chat-server/issues"
   },
-  "homepage": "https://github.com/ChapalBarua/websocket-chat-server#readme",
+  "homepage": "https://github.com/ChapalBarua/chat-server#readme",
   "dependencies": {
     "express": "^4.19.2",
     "ws": "^8.16.0"
