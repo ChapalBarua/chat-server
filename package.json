@@ -1,0 +1,23 @@
+{
+  "name": "websocket-chat-server",
+  "version": "1.0.0",
+  "description": "chat server using websocket",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChapalBarua/websocket-chat-server.git"
+  },
+  "author": "Chapal Barua",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChapalBarua/websocket-chat-server/issues"
+  },
+  "homepage": "https://github.com/ChapalBarua/websocket-chat-server#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "ws": "^8.16.0"
+  }
+}
