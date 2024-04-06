@@ -25,5 +25,5 @@ app.use(function avoidWWW(req, res, next) {
 
 app.use(express.static(__dirname + '/dist/websocket-chat-app'));
 app.get('/*', (req, res) => res.sendFile(path.join(__dirname + '/dist/websocket-chat-app/index.html')));
-https.createServer(options, app).listen(443);
+https.createServer(app).listen(443);
 http.createServer(app).listen(PORT, ()=>console.log(`Server is now listening on port ${PORT}`));
