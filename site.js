@@ -3,6 +3,7 @@ const PORT = 80;
 var http = require('http');
 var https = require('https');
 const path = require('path');
+var cors = require("cors");
 
 var fs = require('fs');
 var util = require('util');
@@ -17,6 +18,7 @@ console.log = function () {
 console.error = console.log;
 
 const app = express();
+app.use(cors());
 
 // redirect https to http
 app.use(function avoidHTTPS(req, res, next) {
