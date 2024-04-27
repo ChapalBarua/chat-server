@@ -11,7 +11,7 @@ var options = {
   cert: fs.readFileSync('/home/ec2-user/secrets/certs/cert.crt')
 };
 
-httpsServer = https.createServer(options).listen(3000);
+httpsServer = https.createServer(options).listen(5000);
 
 const sockserver = new WebSocketServer({server: httpsServer});
 sockserver.on('connection', ws => {

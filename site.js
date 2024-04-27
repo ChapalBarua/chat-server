@@ -1,5 +1,5 @@
 const express = require('express');
-const PORT = 443;
+const PORT = 6000;
 var https = require('https');
 var http = require('http');
 const path = require('path');
@@ -44,7 +44,7 @@ app.use(function requireWWW(req, res, next) {
   next();
 });
 
-http.createServer(app).listen(80);
+//http.createServer(app).listen(80);
 app.use(express.static(__dirname + '/dist/websocket-chat-app'));
 app.get('/*', (req, res) => res.sendFile(path.join(__dirname + '/dist/websocket-chat-app/index.html')));
-https.createServer(options, app).listen(PORT, ()=>console.log(`Server is now listening on port 443 for https`));
+https.createServer(options, app).listen(PORT, ()=>console.log(`Server is now listening on port ${PORT} for https`));
